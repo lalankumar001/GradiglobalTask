@@ -14,7 +14,7 @@ const Withdraw = () => {
        <form className="row gy-2 gx-3 align-items-center mt-1">
          <div className="input-group">
            <div className="input-group-text fw-bold">#</div>
-          <select class="form-select" aria-label="Default select example">
+          <select className="form-select" aria-label="Default select example">
             <option selected>Bank Transfer</option>
             <option value="1">Bitcoin Wallet</option>
             <option value="2">Paypal</option>
