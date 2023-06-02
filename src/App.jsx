@@ -35,6 +35,7 @@ function App() {
         <div className="w-75" id='Navbar'><Navbar /></div>
       </div>       
        <Routes>
+        <Route exact path="/" Component={MainDashboard}/>
         <Route exact path="/dashboard" Component={MainDashboard}/>
         <Route exact path="/kyc" Component={Kyc}/>
         <Route exact path="/card" Component={VisaCard}/>
