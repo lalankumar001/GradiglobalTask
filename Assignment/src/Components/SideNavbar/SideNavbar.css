@@ -1,0 +1,9 @@
+.SideNav{
+    background-color: rgb(41, 54, 68);
+    height: 100vh;
+}
+.SideNav .nav-item:hover{
+   padding-left: 3%;
+   scroll-behavior: smooth;
+   box-shadow: 1px solid;
+}
