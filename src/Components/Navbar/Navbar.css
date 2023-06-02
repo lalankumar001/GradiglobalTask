@@ -6,8 +6,10 @@
     margin-left: 1%;
 }
 
-#UserIcon{
-    width: 20%;
-    height: auto;
-    margin-left: 98%;
+.UserIcon{
+  margin-left:99%;
+  position: absolute;
+}
+.UserIcon img{
+    margin-left: 99%;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import Logo from '../../assets/Logo.png'
+import { Link } from 'react-router-dom';
 // React icons imported here from react Icons
 import { MdOutlineHome ,MdFormatAlignCenter} from "react-icons/md";
 import { FiPaperclip ,FiCreditCard ,FiPlus} from "react-icons/fi";
@@ -16,31 +17,31 @@ const SideNavbar = () => {
   <img src={Logo} alt="img" width='230' className='mt-3 my-2 shadow' />
 <ul className="nav flex-column mx-2">
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-bold p-3 text-white shadow" href="#"><MdOutlineHome  className='fs-3'/> Dashboard</a>
+  <Link to='/dashboard' className="nav-link fs-6 fw-bold p-3 text-white shadow"><MdOutlineHome  className='fs-3'/> Dashboard </Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><FiPaperclip className='fs-3' /> KYC Status</a>
+   <Link to='/kyc'className="nav-link fs-6 fw-semibold p-3 text-white"><FiPaperclip className='fs-3' /> KYC Status </Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><FiCreditCard className='fs-3'/> Visa Card</a>
+   <Link to='card' className="nav-link fs-6 fw-semibold p-3 text-white"><FiCreditCard className='fs-3'/> Visa Card</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><FiPlus className='fs-3'/> Fund Wallet</a>
+   <Link to='/fund' className="nav-link fs-6 fw-semibold p-3 text-white"><FiPlus className='fs-3'/> Fund Wallet</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><GrGoogleWallet  className='fs-3'/> Wallet Transfer</a>
+  <Link to='/wallet' className="nav-link fs-6 fw-semibold p-3 text-white" ><GrGoogleWallet  className='fs-3'/> Wallet Transfer</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><TfiBag className='fs-3'/> Withdrawal</a>
+   <Link to='withdraw' className="nav-link fs-6 fw-semibold p-3 text-white" ><TfiBag className='fs-3'/> Withdrawal</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><TfiMedallAlt className='fs-3'/> Whell fo Fortune</a>
+   <Link to='whelloffortune' className="nav-link fs-6 fw-semibold p-3 text-white" ><TfiMedallAlt className='fs-3'/> Whell of Fortune</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><TbCurrencyBitcoin className='fs-3' /> BTC Mining</a>
+   <Link to='/btcmining' className="nav-link fs-6 fw-semibold p-3 text-white"><TbCurrencyBitcoin className='fs-3' /> BTC Mining</Link>
   </li>
   <li className="nav-item">
-    <a className="nav-link fs-6 fw-semibold p-3 text-white" href="#"><MdFormatAlignCenter className='fs-3'/> Transactions</a>
+   <Link to='/transitions' className="nav-link fs-6 fw-semibold p-3 text-white"><MdFormatAlignCenter className='fs-3'/> Transactions</Link>
   </li>
  
 </ul> 

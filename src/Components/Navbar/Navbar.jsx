@@ -6,7 +6,6 @@ import UserIcon from '../../assets/UserIcon.png';
 import { BsCashStack } from "react-icons/bs";
 import { MdCropFree } from "react-icons/md";
 import { Link } from 'react-router-dom';
-import Home from '../Home/Home'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -24,15 +23,15 @@ const Navbar = () => {
           <a className="nav-link fs-4" href="#"> <MdCropFree /> </a>
         </li>
         <li className="nav-item">
-          <a className="btn btn-danger mt-2 mx-2" href="#"><BsCashStack /> Apply for Business Loan</a>
+         <Link to='/loan_req'className="btn btn-danger mt-2 mx-2"><BsCashStack /> Apply for Business Loan</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#"><img src={NavbarVideo} alt="gif" width='370' id='NavbarVideo' /></a>
-        </li>
-        <li className="nav-item " >
-          <a className="nav-link " href="#"> <img src={UserIcon} alt="img" id='UserIcon'/></a>
+          <a className="nav-link" href="https://mydarkwebpage.com/" target='_blank'><img src={NavbarVideo} alt="gif" width='380' id='NavbarVideo' /></a>
         </li>
         </ul>
+        <div className='UserIcon'>
+          <img src={UserIcon} alt="img" width='50' className='nav-link'/>
+        </div>
     </div>
   </div>
 </nav>
